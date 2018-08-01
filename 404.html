@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/main.css" type="text/css">
+    <link rel="stylesheet" href="http://max4a.com/static/css/normalize.css">
+    <link rel="stylesheet" href="http://max4a.com/static/css/common.css">
+
+    <title>404 - Not found</title>
+    <style>
+        h1.not-found-text {
+            font-size: 3rem;
+            color: #fff;
+            text-align: center;
+            font-family: singlesleeveregular, cursive;
+            letter-spacing: 2px;
+        }
+
+        div.not-found-text {
+            position: absolute;
+            bottom: 70%;
+            left: 10%;
+            width: 80%;
+            text-align: center;
+            z-index: 100;
+        }
+
+        div.graphic {
+            position: absolute;
+            top: 2rem;
+            left: 2rem;
+            background: url(../imgs/404.png) top left no-repeat;
+            width: 16rem;
+            height: 8rem;
+            background-size: 100%;
+        }
+
+        div.planet-wrapper {
+            position: absolute;
+            width: 100%;
+            height: 60rem;
+            text-align: center;
+            top: 8rem;
+        }
+
+        div.planet {
+            background: url(../imgs/planet.png) center no-repeat;
+            background-size: 100%;
+            width: 80%;
+            height: 80%;
+            z-index: 0;
+            top: 10rem;
+            margin-left: 10%
+        }
+
+        div.dog-wrapper {
+            position: absolute;
+            width: 100%;
+            height: 8rem;
+            text-align: center;
+        }
+
+        div.dog {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 40%;
+            height: 80px;
+            max-width: 80px;
+            max-height: 80px;
+            left: 30%;
+            top: 8rem;
+            z-index: 999;
+            background: url(../imgs/dog.png) 0 0 no-repeat
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div class="graphic"></div>
+        <div class="planet-wrapper">
+            <div class="not-found-text">
+                <h1 class="not-found-text">Not found, sorry!</h1>
+            </div>
+            <div class="dog-wrapper">
+                <div class="dog"></div>
+            </div>
+            <div class="planet"></div>
+        </div>
+    </div>
+    <script type="text/javascript" src="http://max4a.com/static/js/jquery.min.js"></script>
+    <script type="text/javascript" src="./js/404.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            rotate();
+            dogRun();
+        });
+    </script>
+</body>
+
+</html>

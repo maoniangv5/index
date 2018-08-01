@@ -1,0 +1,25 @@
+@charset "utf-8";
+@font-face {
+    font-family: singlesleeveregular;
+    src: url(../font/sing-webfont.woff);
+    src: url(../font/sing-webfont.eot?#iefix) format('embedded-opentype'), url(../font/sing-webfont.woff) format('woff'), url(../font/sing-webfont.ttf) format('truetype'), url(../font/sing-webfont.svg#SingleSleeveRegular) format('svg');
+    font-weight: 400;
+    font-style: normal
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background: #186aa9 url(../imgs/sky-background.png) top repeat-x;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+#wrapper {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background: url(../imgs/sky-shine.jpg) top left no-repeat;
+}
